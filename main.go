@@ -8,6 +8,6 @@ import (
 
 func main() {
 	file.CreateFile("test", "Hello, world!")
-	content, _ := file.ReadFile("test")
-	fmt.Println(content)
+	watch, _ := file.WatchFile("test")
+	fmt.Println(watch)
 }
